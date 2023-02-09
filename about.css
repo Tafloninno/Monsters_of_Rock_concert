@@ -239,6 +239,7 @@ nav {
 }
 
 .past_concerts {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -247,7 +248,7 @@ nav {
 .first_past_concert {
   width: 100%;
   height: 20vh;
-  background-image: url(images/concert1.jpeg);
+  background-image: linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.4)), url(images/concert1.jpeg);
   background-position: center;
   background-size: cover;
 }
@@ -269,7 +270,7 @@ nav {
 .second_past_concert {
   width: 100%;
   height: 20vh;
-  background-image: url(images/concert2.jpeg);
+  background-image: linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.4)), url(images/concert2.jpeg);
   background-position: center;
   background-size: cover;
 }

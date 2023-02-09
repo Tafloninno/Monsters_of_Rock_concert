@@ -304,6 +304,12 @@ h1.h1_image {
   display: none;
 }
 
+.hidden_artists_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .see_program {
   display: none;
 }
@@ -573,20 +579,26 @@ h1.h1_image {
   }
 
   .hidden_artists_wrapper {
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
     justify-content: space-between;
+    gap: 1.5rem;
   }
 
   .hidden_artists {
     display: flex;
     flex-direction: column;
+    background-image: url(images/grey_square3.svg);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
   }
 
   .artist_details {
     display: flex;
     flex-direction: row;
-    gap: 20%;
+    gap: 10%;
     padding-bottom: 20px;
   }
 
@@ -596,11 +608,10 @@ h1.h1_image {
   }
 
   .normal_image_desk {
-    width: 120px;
+    width: 140px;
     height: 140px;
-    position: absolute;
-    left: 12%;
     padding-top: 20px;
+    padding-left: 20px;
   }
 
   .artist_description {
