@@ -1,4 +1,4 @@
-# First_capstone_project
+
 <a name="readme-top"></a>
 
 
@@ -38,15 +38,20 @@
 
 
 
-## 📖 Portfolio <a name="about-project"></a>
+## 📖 Monsters of rock website <a name="about-project"></a>
 
-> Building a responsive portfolio mobile project using HTML/CSS  from a Figma design template
+> Building a responsive portfolio mobile project using HTML/CSS  from a Bihance design template
+  
+  >[Click here for the website video presentation](https://www.loom.com/share/26b9a67e82464c60b06ce230e7509a2a)
+
+
+![Uploading Screenshot 2023-02-09 at 14.55.41.png…]()
 
 
 
 
 
-## 🛠 Built With Figma, VSCode, and Github <a name="Built With Figma, VSCode, and Github"></a>
+## 🛠 Built With Figma, VSCode, Bihance and Github <a name="Built With Figma, VSCode, Bihance and Github"></a>
 
 ### HTML/CSS, Github and Figma <a name="tech-stack"></a>
 
@@ -79,7 +84,9 @@
 
 
 
-- **Mobile version**
+- **Responsive Design**
+- **Linters integration**
+- **Mobile menu functionality with Javascript**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -105,8 +112,9 @@
 ### Prerequisites
 
 In order to run this project you need:
-- VScode
-- Figma
+- Node
+- ESlint set up
+- Web template from Bihance
 
 <!--
 Example command:
@@ -120,13 +128,7 @@ Example command:
 
 Clone this repository to your desired folder:
 <br>
-<br>```gh repo clone Tafloninno/Portfolio```
-
-
-```sh
-  cd my-folder
-  git clone git@github.com:Tafloninno/Portfolio.git
-```
+<br>gh repo clonehttps://github.com/Tafloninno
 
 
 
@@ -140,6 +142,9 @@ Example command:
 ```sh
   cd my-project
   gem install
+  gh repo clone Tafloninno/First_capstone_project
+  cd capstone_project
+  npm install -y
 ```
 --->
 
@@ -147,37 +152,40 @@ Example command:
 
 To run the project, execute the following command:
 
-<!--
-Example command:
+
+
+- install the server with
+```sh
+  npm install -g serve
+```
 
 ```sh
-  rails server
+  serve -s .
 ```
---->
+
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
+
 
 ```sh
-  bin/rails test test/models/article_test.rb
+      npx stylelint "**/*.{css,scss}"
+
 ```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
 
 ```sh
-
+      npx hint .
 ```
- -->
+
+```sh
+    npx eslint .
+```
+
+
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,6 +211,9 @@ Example:
 > I'll add the following section to the webpage.
 
 - [ ] **work section**
+- [ ] **baout page**
+- [ ] **partners section**
+- [ ] **footer section**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -233,7 +244,9 @@ If you like this project... Kindly leave a star ⭐
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank  Microverse and my studying partners and Cindy Shin for the amazing UI design.
+
+Original design idea by Cindy Shin in Behance
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
