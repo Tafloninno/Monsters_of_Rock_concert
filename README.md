@@ -45,7 +45,9 @@
   >[Click here for the website video presentation](https://www.loom.com/share/26b9a67e82464c60b06ce230e7509a2a)
 
 
-![Uploading Screenshot 2023-02-09 at 14.55.41.png…]()
+<img width="1440" alt="Screenshot 2023-02-09 at 15 26 10" src="https://user-images.githubusercontent.com/111200646/217812517-5b3fb531-09c9-4d27-933d-4b4a457214b6.png">
+
+
 
 
 
@@ -247,6 +249,10 @@ If you like this project... Kindly leave a star ⭐
 I would like to thank  Microverse and my studying partners and Cindy Shin for the amazing UI design.
 
 Original design idea by Cindy Shin in Behance
+
+
+<img width="1440" alt="Screenshot 2023-02-09 at 15 27 51" src="https://user-images.githubusercontent.com/111200646/217812845-a6c177fc-d2e4-41d0-b5d9-09339ab8d00b.png">
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
