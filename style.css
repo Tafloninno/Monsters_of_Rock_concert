@@ -89,7 +89,7 @@ nav {
 
 .homepage_content {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   padding: 70px 20px;
@@ -172,7 +172,7 @@ h1.h1_image {
 }
 
 .main_program h2 {
-  margin-top: 10%;
+  margin-top: 3%;
   color: white;
   font-size: 28px;
 }
@@ -413,7 +413,7 @@ hr {
   }
 
   .homepage {
-    height: 100vh;
+    height: 90vh;
     padding-left: 144px;
     padding-right: 144px;
   }
@@ -545,7 +545,7 @@ hr {
 
   .work_section {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
   }
 
   .program_details_wrapper {
@@ -610,9 +610,10 @@ hr {
 
   .features {
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     padding-left: 120px;
     padding-right: 120px;
+    overflow: hidden;
   }
 
   .features_container {
