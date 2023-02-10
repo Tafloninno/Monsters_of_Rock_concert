@@ -7,11 +7,23 @@
     <link rel="stylesheet" href="about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/8d0a2aa6d4.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <title>first capstone project</title>
 </head>
 <body>
-    <header> 
+    <header>
+        <div class="socials_container">
+            <div class="socials_wrapper">
+               <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <ul>
+                    <a href="#"><li>English</li></a>
+                    <a href="#"><li>My Page</li></a>
+                    <a href="#"><li>Logout</li></a>
+                </ul>
+            </div>
+        </div> 
         <nav>
             <a href="#" class="music_logo">
                 <img src="images/label.png" alt="">
@@ -22,7 +34,7 @@
                 <span class="bar"></span>
             </div>
             <ul class="mobile_menu">
-                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="#">concert</a></li>
                 <li><a href="#">ticket</a></li>
                 <li><a href="#">shows</a></li>
@@ -71,6 +83,7 @@
             </div>
 
         </section>
+        <hr>
         <section class="features">
             <div class="features_container">
                 <div class="featured_artists">
@@ -100,25 +113,11 @@
     <footer>
          <section class="footer">
             <div class="footer_container">
-                <div class="footer_header">
-                    <h2>Partners</h2>
-                    <div class="line_partner"></div>
-                </div>
-                <div class="partner_logo">
-                    <div class="partner_image_logo1">
-                        <img src="images/google_.svg" alt="" class="image1">
-                        <img src="images/Twitter  .svg" alt="" class="image2">
-                        <img src="images/Airbnb .svg" alt="" class="image3">
-                        <img src="images/Airbnb .svg" alt="" class="image3">
-                        <img src="images/Airbnb .svg" alt="" class="image3">
-                    </div>
+                <div class="lower_footer">
+                    <img src="images/label.png" alt="">
+                    <p>@2023 The monsters of rock concerts in gotham </p>
                 </div>
             </div>
-            <div class="lower_footer">
-                <img src="images/label.png" alt="">
-                <p>@2023 The monsters of rock concerts in gotham </p>
-            </div>
-
          </section>
     </footer>
     <script src="index.js"></script>

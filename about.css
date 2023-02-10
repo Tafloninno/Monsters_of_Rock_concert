@@ -46,6 +46,10 @@ nav {
   font-weight: 600;
 }
 
+.socials_container {
+  display: none;
+}
+
 .bar {
   width: 36px;
   height: 7px;
@@ -78,15 +82,17 @@ nav {
   background-image: url(images/mobile\ background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .homepage_content {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 70px 20px;
   gap: 30px;
 }
@@ -153,10 +159,12 @@ nav {
 
 .work_section {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   background-color: white;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 20px;
+  overflow: hidden;
 }
 
 .work_section_content {
@@ -203,11 +211,16 @@ nav {
   padding: 50px;
 }
 
+hr {
+  border-top: 1px solid rgb(219, 215, 215);
+}
+
 .features {
   width: 100%;
   height: 70vh;
   padding-left: 40px;
   padding-right: 40px;
+  overflow: hidden;
 }
 
 .features_container {
@@ -239,7 +252,6 @@ nav {
 }
 
 .past_concerts {
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -299,47 +311,10 @@ nav {
 
 .footer {
   width: 100%;
-  height: 30vh;
 }
 
 .footer_container {
   background-color: rgb(56, 58, 62);
-}
-
-.footer_header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-}
-
-.footer_header h2 {
-  color: rgb(185, 181, 181);
-  padding-top: 10%;
-}
-
-.line_partner {
-  width: 50px;
-  height: 2px;
-  background-color: rgb(236, 61, 42);
-  margin-bottom: 10%;
-}
-
-.partner_image_logo1 {
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  padding-bottom: 2rem;
-}
-
-.partner_image_logo1 img {
-  width: 70px;
-  -webkit-filter: grayscale(100%);
 }
 
 .lower_footer {
@@ -352,18 +327,17 @@ nav {
 }
 
 .lower_footer img {
-  width: 50%;
+  width: 30%;
 }
 
 .lower_footer p {
-  color: rgb(96, 92, 92);
+  color: white;
   font-size: 12px;
 }
 
 @media (min-width: 768px) {
   nav {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 2px 17%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -385,6 +359,40 @@ nav {
     background-image: none;
   }
 
+  .socials_container {
+    padding: 10px  17%;
+    display: flex;
+    background-color: rgb(56, 58, 62);
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .socials_wrapper {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .socials_wrapper ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    gap: 26px;
+  }
+
+  .socials_wrapper ul li {
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .socials_wrapper i {
+    color: white;
+  }
+
   .hamburger_menu {
     display: none;
   }
@@ -404,7 +412,7 @@ nav {
   }
 
   .music_logo img {
-    width: 300px;
+    width: 100px;
   }
 
   .mobile_menu a {
@@ -497,13 +505,20 @@ nav {
     width: 40%;
     border: 1px solid  rgb(213, 210, 210);
     padding: 50px;
+    margin-bottom: 5%;
+  }
+
+  .work_section {
+    height: 70vh;
+    background-color: white;
   }
 
   .features {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     padding-left: 120px;
     padding-right: 120px;
+    overflow: hidden;
   }
 
   .features_container {
@@ -532,7 +547,7 @@ nav {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    margin: 60px;
+    margin: 60px 120px;
   }
 
   .first_past_concert {

@@ -21,6 +21,10 @@ nav {
   gap: 4px;
 }
 
+.socials_container {
+  display: none;
+}
+
 .nav_link {
   top: 0;
   left: -100%;
@@ -78,8 +82,9 @@ nav {
   background-image: url(images/mobile\ background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .homepage_content {
@@ -150,11 +155,12 @@ h1.h1_image {
 
 .work_section {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: #272a31;
   background-image: url(images/crossed_lines.svg);
   padding-left: 15px;
   padding-right: 15px;
+  overflow: hidden;
 }
 
 .main_program {
@@ -204,8 +210,7 @@ h1.h1_image {
 }
 
 .ticket_button {
-  width: 100%;
-  height: 100px;
+  width: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,14 +218,16 @@ h1.h1_image {
   font-size: 26px;
   color: white;
   border: none;
-  margin-top: 15%;
+  padding: 18px;
+  margin: 20px 50px;
 }
 
 .features {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   padding-left: 12px;
   padding-right: 12px;
+  overflow: hidden;
 }
 
 .features_container {
@@ -243,47 +250,17 @@ h1.h1_image {
   font-size: 28px;
 }
 
-.artist {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20%;
-}
-
 .box_image {
   width: 80px;
   height: 80px;
 }
 
-.normal_image {
+.normal_image_desk {
   width: 120px;
   height: 120px;
   left: 8%;
   margin-top: 21px;
   position: absolute;
-}
-
-.artist_about {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.artist_about h2 {
-  font-size: 24px;
-  color: #272a31;
-}
-
-.artist_about h4 {
-  font-style: italic;
-  color: #ec5242;
-  font-weight: 300;
-}
-
-.artist_about p {
-  color: #272a31;
-  font-weight: 300;
-  font-size: 16px;
 }
 
 .more {
@@ -296,18 +273,8 @@ h1.h1_image {
   padding: 12px;
 }
 
-.more h4 {
+button .more {
   font-weight: 400;
-}
-
-.hidden_artists {
-  display: none;
-}
-
-.hidden_artists_wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
 }
 
 .see_program {
@@ -316,6 +283,62 @@ h1.h1_image {
 
 .music_logo {
   display: none;
+}
+
+.hidden_artists_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.hidden_artists {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/grey_square3.svg);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+}
+
+.artist_details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  padding-bottom: 20px;
+}
+
+.hidden_perfomer .hidden_artists:nth-child(n + 3) {
+  display: none;
+}
+
+.band_image {
+  width: 50%;
+}
+
+.artist_description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.artist_description h4 {
+  width: 100%;
+  color: #ec5242;
+  font-style: italic;
+}
+
+.artist_description p {
+  width: 100%;
+  font-size: 14px;
+}
+
+hr {
+  width: 18px;
 }
 
 .footer {
@@ -382,8 +405,7 @@ h1.h1_image {
 
 @media (min-width: 768px) {
   nav {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 2px 17%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -391,12 +413,47 @@ h1.h1_image {
   }
 
   .homepage {
+    height: 100vh;
     padding-left: 144px;
     padding-right: 144px;
   }
 
   header {
     background-image: none;
+  }
+
+  .socials_container {
+    padding: 10px  17%;
+    display: flex;
+    background-color: rgb(56, 58, 62);
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .socials_wrapper {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .socials_wrapper ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    gap: 26px;
+  }
+
+  .socials_wrapper ul li {
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .socials_wrapper i {
+    color: white;
   }
 
   .hamburger_menu {
@@ -418,7 +475,7 @@ h1.h1_image {
   }
 
   .music_logo img {
-    width: 300px;
+    width: 100px;
   }
 
   .mobile_menu a {
@@ -486,12 +543,18 @@ h1.h1_image {
     color: #272a31;
   }
 
-  .program_details_wrapper {
+  .work_section {
     width: 100%;
+    height: 100vh;
+  }
+
+  .program_details_wrapper {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 10px;
     padding: 38px 12px;
+    margin-left: 140px;
+    margin-right: 140px;
   }
 
   .ticket_button {
@@ -499,6 +562,7 @@ h1.h1_image {
   }
 
   .program_details {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -546,7 +610,7 @@ h1.h1_image {
 
   .features {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -595,11 +659,20 @@ h1.h1_image {
     background-repeat: no-repeat;
   }
 
+  .hidden_perfomer .hidden_artists:nth-child(n + 3) {
+    display: block;
+  }
+
   .artist_details {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 10%;
+    gap: 0;
     padding-bottom: 20px;
+  }
+
+  .band_image {
+    width: 50%;
   }
 
   .box_image_desk {
@@ -610,6 +683,7 @@ h1.h1_image {
   .normal_image_desk {
     width: 140px;
     height: 140px;
+    left: auto;
     padding-top: 20px;
     padding-left: 20px;
   }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8d0a2aa6d4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -12,9 +13,20 @@
 </head>
 <body>
     <header> 
+        <div class="socials_container">
+            <div class="socials_wrapper">
+               <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <ul>
+                    <a href="#"><li>English</li></a>
+                    <a href="#"><li>My Page</li></a>
+                    <a href="#"><li>Logout</li></a>
+                </ul>
+            </div>
+        </div>
         <nav>
-            <a href="http://127.0.0.1:5500/index.html" class="music_logo">
-                <img src="images/label.png" alt="">
+            <a href="index.html" class="music_logo">
+                <img src="images/label.png" alt="logo image">
              </a>
             <div class="hamburger_menu">
                 <span class="bar"></span>
@@ -22,7 +34,7 @@
                 <span class="bar"></span>
             </div>
             <ul class="mobile_menu">
-                <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+                <li><a href="./about.html">About</a></li>
                 <li><a href="#">concert</a></li>
                 <li><a href="#">ticket</a></li>
                 <li><a href="#">shows</a></li>
@@ -61,33 +73,33 @@
                     <div class="line_program"></div>
                 </div>
                 <div class="program_details_wrapper">
-                    <div class="program_details">
-                        <img src="images/program_icon_01.png" alt="">
+                    <article class="program_details">
+                        <img src="images/program_icon_01.png" alt="icon image">
                         <h3>Artist</h3>
                         <p> Rock music, also called rock and roll, rock & roll, or rock 'n' roll </p>
-                    </div>
-                    <div class="program_details">
-                        <img src="images/program_icon_02.png" alt="">
+                    </article>
+                    <article class="program_details">
+                        <img src="images/program_icon_02.png" alt="icon image">
                         <h3>Band</h3>
                         <p>Big Rock Band, Hollywood, Florida. 3628 likes · 51 talking about this. </p>
-                    </div>
-                    <div class="program_details">
-                        <img src="images/program_icon_04.png" alt="">
+                    </article>
+                    <article class="program_details">
+                        <img src="images/program_icon_04.png" alt="icon image">
                         <h3>Artist</h3>
                         <p>Rock music, also called rock and roll, rock & roll, or rock 'n' roll</p>
-                    </div>
-                    <div class="program_details">
-                        <img src="images/program_icon_05.png" alt="">
+                    </article>
+                    <article class="program_details">
+                        <img src="images/program_icon_05.png" alt="icon image">
                         <h3>band</h3>
                         <p> Big Rock Band, Hollywood, Florida. 3628 likes · 51 talking about this. </p>
-                    </div>
-                    <div class="program_details">
-                        <img src="images/program_icon_05.png" alt="">
+                    </article>
+                    <article class="program_details">
+                        <img src="images/program_icon_05.png" alt="icon image">
                         <h3>Artist</h3>
                         <p> Rock music, also called rock and roll, rock & roll, or rock 'n' roll</p>
-                    </div>
+                    </article>
                 </div>
-                <button class="ticket_button">get your concert ticket</button>
+                <button class="ticket_button">get your ticket</button>
                  <div class="see_whole_program">
                     <a href="#" class="see_program"> See The Whole Schedule</a>
                     <div class="line_program_two"></div>
@@ -102,38 +114,16 @@
                     <h2>Featured artists</h2>
                     <div class="line_program"></div>
                 </div>
-                <div class="artist">
-                    <div class="artist_image">
-                        <img src="images/boxes.svg" alt="" class="box_image">
-                        <img src="images/artist_1.webp" alt="" class="normal_image">
-                    </div>
-                    <div class="artist_about">
-                        <h2>Chris Cornell.</h2>
-                        <h4>Known as the king of rock'n'roll</h4>
-                        <p>was born in Mississippi to a poor family. He sang on the radio at age 10. </p>
-                    </div>
-                    
-                </div>
-                <div class="artist">
-                    <div class="artist_image">
-                        <img src="images/boxes.svg" alt="" class="box_image">
-                        <img src="images/artist_3.jpg" alt="" class="normal_image">
-                    </div>
-                    <div class="artist_about">
-                        <h2>Jon Bon Jovi.</h2>
-                        <h4>did in fact invent rock'n'roll</h4>
-                        <p>Charles' proto-soul vocals and Brown's everything-is-a-drum were innovations as profound as Berry's </p>
-                    </div>
-                </div>
-                <div class="hidden_artists_wrapper">
+               
+                <div class="hidden_artists_wrapper hidden_perfomer">
                        
                  </div>
                 
                 
-                <div class="more">
-                    <h4>MORE</h4>
-                    <img src="images/arrow_down.png" alt="">
-                </div>
+                <button class="more"> 
+                    More
+                    <img src="images/arrow_down.png" alt="button image">
+                </button>
 
             </div>
         </section>
@@ -148,16 +138,16 @@
                 </div>
                 <div class="partner_logo">
                     <div class="partner_image_logo1">
-                        <img src="images/google_.svg" alt="" class="image1">
-                        <img src="images/Twitter  .svg" alt="" class="image2">
-                        <img src="images/Airbnb .svg" alt="" class="image3">
-                        <img src="images/Airbnb .svg" alt="" class="image3">
-                        <img src="images/Airbnb .svg" alt="" class="image3">
+                        <img src="images/google_.svg" alt="partner logo" class="image1">
+                        <img src="images/Twitter  .svg" alt="partner logo" class="image2">
+                        <img src="images/Airbnb .svg" alt="partner logo" class="image3">
+                        <img src="images/Airbnb .svg" alt="partner logo" class="image3">
+                        <img src="images/Airbnb .svg" alt="partner logo" class="image3">
                     </div>
                 </div>
             </div>
             <div class="lower_footer">
-                <img src="images/label.png" alt="">
+                <img src="images/label.png" alt="logo image">
                 <p>@2023 The monsters of rock concerts </p>
             </div>
 
