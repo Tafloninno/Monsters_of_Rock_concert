@@ -99,7 +99,7 @@
 
 
 
-- [Live Demo Link](https://tafloninno.github.io/First_capstone_project/)
+- [Live Demo Link](https://tafloninno.github.io/Monsters_of_Rock_concert/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
